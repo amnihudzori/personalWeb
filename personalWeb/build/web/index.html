@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url("https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg") no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Logo top right */
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 25px;
+        }
+        .logo img {
+            width: 150px;       /* Adjust as needed */
+            height: 150px;      /* Keeps aspect ratio */
+            object-fit: contain; /* Ensures it doesn't stretch */
+        }
+
+        /* Welcome Card */
+        .box {
+            background: white;
+            width: 600px;
+            padding: 40px 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            animation: floatUp 0.9s ease-out;
+        }
+
+        @keyframes floatUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h1 {
+            color: #2d2d7a;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #444;
+            font-size: 16px;
+            margin: 6px 0;
+            line-height: 1.5;
+        }
+
+        button {
+            background: #009DD1;
+            color: white;
+            padding: 12px 30px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 17px;
+            transition: 0.25s;
+        }
+        button:hover {
+            background: #01377D;;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO -->
+    <div class="logo">
+    <img src="https://korporat.uitm.edu.my/images/download/2019/LogoUiTM.png" alt="Website Logo">
+    </div>
+
+    <!-- MAIN BOX -->
+    <div class="box">
+        <h1>Personal Profile System</h1>
+        <p>Welcome! This page helps you to record your personal details.</p>
+        <p>Follow the steps, fill in your information, and get your profile instantly.</p>
+
+        <form action="form.html">
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+</body>
+</html>
